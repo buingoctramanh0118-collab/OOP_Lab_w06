@@ -13,10 +13,14 @@ namespace Labw06.Models
         public string DeviceId { get; init; }
         public string DeviceName { get; set; }
         public int YearOfUse { get; set; }
+
+        public int MaxBorrowPeriods { get; set; }
         public decimal PurchasePrice { get; set; }
         public DeviceStatus Status { get; set; }
 
-        protected Device(string deviceId, string deviceName, int yearOfUse, decimal purchasePrice, DeviceStatus status = DeviceStatus.Active)
+        public int MaxBorrowDays { get; set; } 
+
+        protected Device(string deviceId, string deviceName, int yearOfUse, decimal purchasePrice, int maxBorrowDays)
         {
             if (string.IsNullOrWhiteSpace(deviceId))
                 throw new ArgumentException("Mã thiết bị không được để trống.", nameof(deviceId));
@@ -32,7 +36,8 @@ namespace Labw06.Models
             DeviceName = deviceName;
             YearOfUse = yearOfUse;
             PurchasePrice = purchasePrice;
-            Status = status;
+            MaxBorrowDays = maxBorrowDays;
+            Status = DeviceStatus.Available;
         }
 
         //Tính số năm đã sử dụng
