@@ -5,11 +5,10 @@ Họ tên: Bùi Ngọc Trâm Anh
 
 using System;
 using Labw06.Exceptions; 
-using Labw06.Enums;      
+using Labw06.Enums;     
 
 namespace Labw06.Models
 {
-    // 6. Lớp BorrowItem[cite: 14]
     public class BorrowItem
     {
         public Device Device { get; }
