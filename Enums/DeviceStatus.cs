@@ -2,7 +2,7 @@
 MSSV: 202418832
 Họ tên: Bùi Ngọc Trâm Anh
 */
-namespace LabW05a_DeviceManagement.Enums
+namespace Labw06.Enums
 {
     public enum DeviceStatus
     {
