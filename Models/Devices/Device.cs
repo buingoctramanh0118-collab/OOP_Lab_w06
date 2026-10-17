@@ -4,9 +4,9 @@ Họ tên: Bùi Ngọc Trâm Anh
 */
 
 using System;
-using LabW05a_DeviceManagement.Enums;
+using Labw06.Enums;
 
-namespace LabW05a_DeviceManagement.Models
+namespace Labw06.Models
 {
     public abstract class Device
     {
