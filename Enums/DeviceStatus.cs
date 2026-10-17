@@ -4,9 +4,10 @@ Họ tên: Bùi Ngọc Trâm Anh
 */
 namespace Labw06.Enums
 {
-    public enum DeviceStatus
+   public enum DeviceStatus
     {
-        Active,
+        Available,
+        Borrowed,
         UnderMaintenance,
         Retired
     }
