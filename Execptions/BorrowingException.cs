@@ -9,14 +9,12 @@ using Labw06.Enums;
 
 namespace Labw06.Exceptions
 {
-    // 8.1. Ngoại lệ cơ sở[cite: 16]
     public class BorrowingException : Exception
     {
         public BorrowingException(string message) : base(message) { }
         public BorrowingException(string message, Exception innerException) : base(message, innerException) { }
     }
 
-    // 8.2. Các ngoại lệ dẫn xuất bắt buộc[cite: 17]
     public class DeviceUnavailableException : BorrowingException
     {
         public string DeviceId { get; }
